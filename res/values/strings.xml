@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">quanLyNhanSu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="phongban">
+        <item>PGD</item>
+        <item>PPGD</item>
+        <item>PKT-TV</item>
+        <item>PKH-KD</item>
+        <item>PKT-TC</item>
+        <item>PTC-HC</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_map_activity">Map_activity</string>
+    <string name="title_activity_news">News</string>
+    <string name="title_activity_web_browser">WebBrowser</string>
+    <string name="title_activity_facebook__social">Facebook_Social</string>
+    <string name="facebook_app_id">309729979390336</string>
+</resources>

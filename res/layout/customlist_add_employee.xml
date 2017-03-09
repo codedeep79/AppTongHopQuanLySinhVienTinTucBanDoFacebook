@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/listview_custom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+         <TextView
+            android:id="@+id/txtMaNhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Mã nhân viên" />
+        
+         <TextView
+            android:id="@+id/txtmaPhongBan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Mã phòng ban" />
+         <TextView
+            android:id="@+id/txtTenNhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Tên nhân viên" />
+         <TextView
+            android:id="@+id/txtQueQuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Quê quán" />
+         <TableLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="*">
+             <TableRow>
+                 <TextView
+		            android:id="@+id/txtGioiTinh"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#fff"
+            		android:textStyle="bold"
+		            android:text="Giới tính" />
+                 <TextView
+		            android:id="@+id/txtGiaDinh"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#fff"
+            		android:textStyle="bold"
+		            android:text="Gia đình" />
+                 <TextView
+		            android:id="@+id/txtDienThoai"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#fff"
+           			android:textStyle="bold"
+		            android:text="Điện thoại" />
+             </TableRow>
+         </TableLayout>
+         
+         <TableLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="*">
+             <TableRow>
+             	<TextView 
+             	    android:id="@+id/txtNgaySinh"
+             	    android:layout_width="match_parent"
+             	    android:layout_height="wrap_content"
+             	    android:textColor="#fff"
+           			android:textStyle="bold"
+             	    android:text="Ngày sinh"/>
+             	<TextView 
+             	    android:id="@+id/txtEmail"
+             	    android:layout_width="match_parent"
+             	    android:layout_height="wrap_content"
+             	    android:textColor="#fff"
+           			android:textStyle="bold"
+             	    android:text="Email"/>    
+             </TableRow>
+         </TableLayout>
+         
+         <TableLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="*">
+             <TableRow>
+                 <TextView 
+             	    android:id="@+id/txtSoCmnd"
+             	    android:layout_width="match_parent"
+             	    android:layout_height="wrap_content"
+             	    android:textColor="#fff"
+           			android:textStyle="bold"
+             	    android:text="Chứng minh nhân dân"/>
+             	<TextView 
+             	    android:id="@+id/txtNoiCap"
+             	    android:layout_width="match_parent"
+             	    android:layout_height="wrap_content"
+             	    android:textColor="#fff"
+           			android:textStyle="bold"
+             	    android:text="Nơi cấp"/>
+             </TableRow>
+         </TableLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

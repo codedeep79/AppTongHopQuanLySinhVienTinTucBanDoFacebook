@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TabHost 
+        android:id="@+id/myTabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TabWidget 
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+            <FrameLayout 
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <LinearLayout 
+	                    android:id="@+id/nhanvien"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:background="@drawable/bg1"
+	                    android:layout_margin="5dp"
+	                    android:padding="50dp"
+	                    android:orientation="vertical">
+	                    <LinearLayout 
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:orientation="horizontal"
+	                        android:gravity="center_horizontal">
+	
+	                        <Button
+	                            android:id="@+id/btnAddNhanVien"
+	                            android:layout_width="150dp"
+	                            android:layout_height="100dp"
+	                            android:background="@drawable/button_press_nhanvien"
+	                            android:textColor="#fff"
+	                            android:layout_marginLeft="5dp"
+	                            android:layout_marginBottom="5dp"
+	                            android:padding="20dp"
+	                            android:text="Thêm nhân viên" />
+	                        
+	                        <Button 
+	                            android:id="@+id/btnDeleteNhanVien"
+	                            android:layout_width="150dp"
+	                            android:layout_height="100dp"
+	                            android:background="@drawable/button_press_nhanvien"
+	                            android:textColor="#fff"
+	                            android:layout_marginLeft="5dp"
+	                            android:layout_marginBottom="5dp"
+	                            android:padding="20dp"
+	                            android:text="Xóa nhân viên"/>
+	                    </LinearLayout>
+                    
+	                    <LinearLayout 
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:orientation="horizontal"
+	                        android:gravity="center_horizontal">
+	                        <Button 
+	                            android:id="@+id/btnUpdateNhanVien"
+	                            android:layout_width="150dp"
+	                            android:layout_height="100dp"
+	                            android:background="@drawable/button_press_nhanvien"
+	                            android:textColor="#fff"
+	                            android:layout_marginLeft="5dp"
+	                            android:layout_marginBottom="5dp"
+	                            android:padding="38dp"
+	                            android:text="Cập nhật nhân viên"/>
+	                        
+	                        <Button 
+	                            android:id="@+id/btnExitNhanVien"
+	                            android:layout_width="150dp"
+	                            android:layout_height="100dp"
+	                            android:background="@drawable/button_press_nhanvien"
+	                            android:textColor="#fff"
+	                            android:layout_marginLeft="5dp"
+	                            android:layout_marginBottom="5dp"
+	                            android:padding="20dp"
+	                            android:text="Đóng"/>
+	                    </LinearLayout>
+
+	                    <ListView
+	                        android:id="@+id/listNhanVien"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="match_parent"
+	                        android:background="@android:color/background_light"/>
+                    
+                	</LinearLayout>
+                
+                <LinearLayout 
+                    android:id="@+id/phongban"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="50dp"
+                    android:background="@drawable/bg1"
+                    android:orientation="vertical">
+                    
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btnAddPhongBan"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/button_press_nhanvien"
+                            android:textColor="#fff"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="20dp"
+                            android:text="Thêm phòng ban" />
+                        
+                        <Button 
+                            android:id="@+id/btnDeletePhongBan"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/button_press_nhanvien"
+                            android:textColor="#fff"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="20dp"
+                            android:text="Xóa phòng ban"/>
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+                        <Button 
+                            android:id="@+id/btnUpdatePhongBan"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/button_press_nhanvien"
+                            android:textColor="#fff"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="38dp"
+                            android:text="Sửa phòng ban"/>
+                        
+                        <Button 
+                            android:id="@+id/btnExitPhongBan"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/button_press_nhanvien"
+                            android:textColor="#fff"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="20dp"
+                            android:text="Đóng"/>
+                    </LinearLayout>
+                    
+                    <ListView
+	                        android:id="@+id/listPhongBan"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="match_parent"
+	                        android:background="@android:color/background_light"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
